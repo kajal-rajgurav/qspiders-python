@@ -87,17 +87,31 @@
 # wapt reverse the string 
  
 
-s='HAPPY'
-rev=''
-for i in s:
-    rev=i+rev
-print(rev)
+# s='HAPPY'
+# rev=''
+# for i in s:
+#     rev=i+rev
+# print(rev)
+
+# wapt to get foll output for foll input given input.
+# input
+# st='the only limit to our realiazation of tommorow will be our doubts of today'
+# word_count={}
+# for word in st.split():
+#    count=0
+#    for ch in st:
+#         if ch in 'AEIOUaeiou:
+#             count+=1
+#    word_count[word]=count
+# print(word_count)
+st='the only limit to our realiazation of tommorow will be our doubts of today'
+for word in st.split():
+    
 
 
-var=121
-rev=var
-pall=0
-for i in var:
+       
+
+
     
 
 
