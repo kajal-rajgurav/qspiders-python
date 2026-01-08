@@ -10,3 +10,5 @@ git push origin daily_practice  // to push your change to the github
 git checkout main
 git merge daily_practice
 git push origin main
+
+today is a day
