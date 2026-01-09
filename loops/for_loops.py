@@ -104,14 +104,43 @@
 #             count+=1
 #    word_count[word]=count
 # print(word_count)
-st='the only limit to our realiazation of tommorow will be our doubts of today'
-for word in st.split():
+# st='the only limit to our realiazation of tommorow will be our doubts of today'
+# for word in st.split():
+
+n=5
+for i in range(n+1):
+    for j in range(i):
+        print(i,j)
+     
+
+
+#     o/p:
+#     1,0
+#     1,1
+#     2,0
+#     2,1
+#     2,2
+#     3,0
+#     3,1
+# 3,2 
+# 3,3
+# 4,0,1,2,3,4
+
+
+for i in range(1, 5):
+    for j in range(i):
+        print(chr(65 + j), end=" ")
+    print()
+
+
     
-
-
-       
-
-
-    
+* * * *
+* * *
+* *
+*
+for i in range(1, 5):
+    for j in range(i):
+        print("*", end=" ")
+    print()
 
 
