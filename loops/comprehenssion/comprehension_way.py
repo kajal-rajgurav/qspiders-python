@@ -43,7 +43,9 @@
 # names=['apple','google','yahoo','gmail','instagram']
 # print([name for name in names if len(name)<6])
 # wapt filtering all the lang which starts with 'p'
-names=['python','google','yahoo','facebook','help']
-print(for chr in names if chr.)
+names=['python','google','yahoo','facebook','help','php']
+filterd=[chr for chr in names if chr.startswith('p')]
+print(filterd)
 
+wapt 
 # it is only use for mutable collectins. i.e list,dict,set
