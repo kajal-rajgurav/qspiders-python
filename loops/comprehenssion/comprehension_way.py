@@ -43,7 +43,22 @@
 # names=['apple','google','yahoo','gmail','instagram']
 # print([name for name in names if len(name)<6])
 # wapt filtering all the lang which starts with 'p'
-names=['python','google','yahoo','facebook','help']
-print(for chr in names if chr.)
+# /names=['python','google','yahoo','facebook','help','php','python']
+# print([ chr for chr in names if chr.startswith('p')])
+# wapt build a list with only even with even length string
+# names=['apple','google','yahoo','gmail','instagram','microsoft']
+# print([ name for name in names if len(name%2==0)])
+
+# reverse the item of list if the item only if it string ,otherwise keep as it is .
+names=['hello',123,1.2,'world',True,'python']
+new_lst=[name[::-1] if type(name)==str else name for name in names]
+print(new_lst)
+# print([i[::-1] if type(i)==str else i for i in data])
+# add the item of  two list .
+a=[1,2,3,4]
+b=[5,6,7,8]
+c=[a[i]+b[i] for i in range(len(a))]
+print(c)
+
 
 # it is only use for mutable collectins. i.e list,dict,set
