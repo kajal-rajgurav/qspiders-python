@@ -18,12 +18,18 @@
 # wapt access or print one by one character from the given string.
 # the string is greet=happy
 
-greet='happy'
-i=1
-while i<=len(greet):
-    print(greet)
-    i=i+1
+# greet='happy'
+# i=1
+# while i<=len(greet):
+#     print(greet)
+#     i=i+1
 
-
-
+#  reverse the item of list if the item only if it string ,otherwise keep as it is .
+names=['hello',123,1.2,'world',True,'python']
+new_lst=[]
+if type(len(new_lst))==str:
+    print("only strings")
+else:
+    print("no string")
+   
 
