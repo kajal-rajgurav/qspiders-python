@@ -44,3 +44,4 @@ buildings={
 print({ building:height*3.28 for building,height in buildings.items()})
 
 # 7.creating dict of city and populATION pairs using dict comprehsion
+citis
