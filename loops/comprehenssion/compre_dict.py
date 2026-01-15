@@ -62,3 +62,8 @@ greet='happy makar sankranti whishing you joy prosperity health and success'
 words=greet.split()
 words.sort(key=len)
 print(words[-1])
+
+
+# 3.counting the numbers of each character in a string
+st="my name is kajal"
+print({chr:st.count(chr) for chr in st})
