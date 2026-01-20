@@ -12,3 +12,19 @@ def outer():
     inner()
     print(b)
 outer()
+
+
+######################
+database=[]
+def registration(name,phno,gmail,alt_phno=None,alt_gmail=None):
+    database.append({'name':nam,
+                     'phno':phno,
+                     'alt_phno':alt_phno,
+                     'gmail':gmail,
+                     'alt_gmail':alt_gmail})
+    return 'registration is succesfull'
+print()
+
+
+    
+
