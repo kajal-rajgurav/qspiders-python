@@ -8,7 +8,6 @@ print(word_len)
 # ...comprehension way.........
 print({i:len(i) for i in sentence.split()})
 
-
 # 2.flipping keys and values of the dictionary using dict comrehension
 # 
 d={'a':1,'b':2,'c':3,'d':1} 
@@ -47,7 +46,8 @@ print({ building:height*3.28 for building,height in buildings.items()})
 # citis/
 
 #8 .creating dict of country and its dial code
-dial_codes=[
+dial_c
+odes=[
     (6,'china'),
     (91,'india'),
     (1,'usa'),
