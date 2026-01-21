@@ -1,4 +1,4 @@
-implement login page if user name valid then only collect the password n check the passwrod correct then print login succesfull if the pass is correct.
+# implement login page if user name valid then only collect the password n check the passwrod correct then print login succesfull if the pass is correct.
 
 reg_user_name='pyspider'
 password='py@123'
