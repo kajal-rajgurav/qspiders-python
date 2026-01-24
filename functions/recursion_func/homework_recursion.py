@@ -6,3 +6,8 @@ for i in data:
         print("yes it string")
     else:
         print("no a string")
+# wapt longest word in the string
+greet='happy makar sankranti whishing you joy prosperity health and success'
+words=greet.split()
+words.sort(key=len)
+print(words[-1])

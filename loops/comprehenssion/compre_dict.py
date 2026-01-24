@@ -46,8 +46,7 @@ print({ building:height*3.28 for building,height in buildings.items()})
 # citis/
 
 #8 .creating dict of country and its dial code
-dial_c
-odes=[
+dial_codes=[
     (6,'china'),
     (91,'india'),
     (1,'usa'),
