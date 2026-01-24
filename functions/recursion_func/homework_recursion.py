@@ -39,6 +39,32 @@ result = count_vowels(data)
 print(result)
 
 
+###########################################################################
+
+def count_vowels(data):
+    vowels = {'a': 0, 'e': 0, 'i': 0, 'o': 0, 'u': 0}
+
+    for item in data:
+        if isinstance(item, str):
+            for ch in item.lower():
+                if ch in vowels:
+                    vowels[ch] += 1
+    return vowels
+
+
+# user input
+data = []
+n = int(input("Enter number of elements: "))
+
+for i in range(n):
+    val = input("Enter value: ")
+    data.append(val)
+
+result = count_vowels(data)
+print("Vowel count:", result)
+
+
+
 
 
 
