@@ -20,6 +20,25 @@ for word in new_lst:
 print(resultDict)
 
 
+###333333333333333333
+def count_vowels(data):
+    vowels = {'a': 0, 'e': 0, 'i': 0, 'o': 0, 'u': 0}
+
+    for item in data:
+        if isinstance(item, str):
+            for ch in item.lower():
+                if ch in vowels:
+                    vowels[ch] += 1
+
+    return vowels
+
+
+data = [87, "hai", "python", 8.3, "congratulations"]
+
+result = count_vowels(data)
+print(result)
+
+
 
 
 
