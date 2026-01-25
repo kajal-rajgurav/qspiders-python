@@ -24,5 +24,6 @@ print(fibonacci(6))
 
 # So,
 # fibonacci(5) = 3 + 2 = 5
-
+# Fibonacci using recursion works by calling the function repeatedly for smaller values until the base condition is met.
+#    Each call returns a value that contributes to the final result.
 
