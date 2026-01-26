@@ -17,3 +17,22 @@ def greet(name):
     print("Hello", name)
 
 greet("Kajal")
+
+# real time decorator 
+
+import time
+
+def timer(func):
+    def wrapper():
+        start = time.time()
+        func()
+        end = time.time()
+        print("Time taken:", end-start)
+    return wrapper
+
+@timer
+def task():
+    for i in range(1000000):
+        pass
+
+task()
