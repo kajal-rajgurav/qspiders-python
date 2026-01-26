@@ -36,3 +36,21 @@ def task():
         pass
 
 task()
+
+# 3. Authentication Example (Real Use Case)
+
+def login_required(func):
+    def wrapper(user):
+        if user == "admin":
+            func(user)
+        else:
+            print("Access Denied ❌")
+    return wrapper
+
+@login_required
+def dashboard(user):
+    print("Welcome to Dashboard", user)
+
+dashboard("admin")
+dashboard("guest")
+
