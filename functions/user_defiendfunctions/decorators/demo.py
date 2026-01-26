@@ -1,4 +1,4 @@
- Decorator Example (Simple)
+#  Decorator Example (Simple)
 def my_decorator(func):
     def wrapper():
         print("Before function")
