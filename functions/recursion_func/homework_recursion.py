@@ -7,7 +7,7 @@ for i in data:
     if type(i)==str:
         new_lst.append(i)
 
-print(new_lst)
+# print(new_lst)
 
 for word in new_lst:
     count=0
@@ -20,48 +20,56 @@ for word in new_lst:
 print(resultDict)
 
 
+# RECURSION WAY#############
+# def word_vowel(lst,out={},i=0):
+    # if i<len(lst):
+    #     if type(lst[i])==str:
+    #         count=0
+    #         for ch in 
+
+
 ###333333333333333333
-def count_vowels(data):
-    vowels = {'a': 0, 'e': 0, 'i': 0, 'o': 0, 'u': 0}
+# def count_vowels(data):
+#     vowels = {'a': 0, 'e': 0, 'i': 0, 'o': 0, 'u': 0}
 
-    for item in data:
-        if isinstance(item, str):
-            for ch in item.lower():
-                if ch in vowels:
-                    vowels[ch] += 1
+#     for item in data:
+#         if isinstance(item, str):
+#             for ch in item.lower():
+#                 if ch in vowels:
+#                     vowels[ch] += 1
 
-    return vowels
-
-
-data = [87, "hai", "python", 8.3, "congratulations"]
-
-result = count_vowels(data)
-print(result)
+#     return vowels
 
 
-###########################################################################
+# data = [87, "hai", "python", 8.3, "congratulations"]
 
-def count_vowels(data):
-    vowels = {'a': 0, 'e': 0, 'i': 0, 'o': 0, 'u': 0}
-
-    for item in data:
-        if isinstance(item, str):
-            for ch in item.lower():
-                if ch in vowels:
-                    vowels[ch] += 1
-    return vowels
+# result = count_vowels(data)
+# print(result)
 
 
-# user input
-data = []
-n = int(input("Enter number of elements: "))
+# ###########################################################################
 
-for i in range(n):
-    val = input("Enter value: ")
-    data.append(val)
+# def count_vowels(data):
+#     vowels = {'a': 0, 'e': 0, 'i': 0, 'o': 0, 'u': 0}
 
-result = count_vowels(data)
-print("Vowel count:", result)
+#     for item in data:
+#         if isinstance(item, str):
+#             for ch in item.lower():
+#                 if ch in vowels:
+#                     vowels[ch] += 1
+#     return vowels
+
+
+# # user input
+# data = []
+# n = int(input("Enter number of elements: "))
+
+# for i in range(n):
+#     val = input("Enter value: ")
+#     data.append(val)
+
+# result = count_vowels(data)
+# print("Vowel count:", result)
 
 
 
@@ -83,3 +91,23 @@ print("Vowel count:", result)
 
 # st="my name is kajal"
 # print({chr:st.count(chr) for chr in st})
+
+
+
+
+
+
+
+# 2.
+def rev_str_element(lst,out=set(),i=0):
+    if i<len(lst):
+        if type(lst[i])==str:
+            rev=''
+            for ch in lst[i]:
+                rev=ch+rev
+                out.add(rev)
+        else:
+            out.add(lst[i])
+            rev_str_element(lst,out,i=i+1)
+    return out
+print(rev_str_element([12,'hai',"hello",87,6.7,'python']))

@@ -6,7 +6,7 @@ def factorial(n):
         return n * factorial(n - 1)  # Recursive call
 
 print(factorial(5))
-# how itas  works
+# how it as  works
 # factorial(5)
 # = 5 * factorial(4)
 # = 5 * 4 * factorial(3)
