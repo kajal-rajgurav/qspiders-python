@@ -134,5 +134,18 @@ def task():
 
 task()
 
+# Example 6: Logging Decorator
+def logger(func):
+    def wrapper(*args, **kwargs):
+        print(f"Calling function: {func.__name__}")
+        func(*args, **kwargs)
+    return wrapper
+
+@logger
+def multiply(a, b):
+    print(a * b)
+
+multiply(4, 5)
+
 
 
