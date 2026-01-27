@@ -117,4 +117,22 @@ def dashboard(user):
 dashboard("admin")
 dashboard("guest")
 
+# Example 5: Function Execution Time (Very Popular ⏱️)
+import time
+
+def timer(func):
+    def wrapper(*args, **kwargs):
+        start = time.time()
+        func(*args, **kwargs)
+        end = time.time()
+        print("Time taken:", end - start)
+    return wrapper
+
+@timer
+def task():
+    time.sleep(1)
+
+task()
+
+
 
