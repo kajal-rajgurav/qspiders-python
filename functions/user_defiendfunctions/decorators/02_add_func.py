@@ -69,3 +69,17 @@ def hello():
 
 hello()
 
+# Example 2: Decorator with Arguments
+def decorator(func):
+    def wrapper(name):
+        print("Greeting starts")
+        func(name)
+        print("Greeting ends")
+    return wrapper
+
+@decorator
+def greet(name):
+    print("Hello", name)
+
+greet("Kajal")
+
