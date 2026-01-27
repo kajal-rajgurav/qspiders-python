@@ -83,3 +83,38 @@ def greet(name):
 
 greet("Kajal")
 
+
+# Example 3: Using *args and **kwargs (Most Used ⭐)
+
+def decorator(func):
+    def wrapper(*args, **kwargs):
+        print("Function execution started")
+        result = func(*args, **kwargs)
+        print("Function execution finished")
+        return result
+    return wrapper
+
+@decorator
+def add(a, b):
+    return a + b
+
+print(add(10, 20))
+
+
+# 🔹 Example 4: Authorization / Login Check
+def login_required(func):
+    def wrapper(user):
+        if user == "admin":
+            func(user)
+        else:
+            print("Access Denied")
+    return wrapper
+
+@login_required
+def dashboard(user):
+    print("Welcome", user)
+
+dashboard("admin")
+dashboard("guest")
+
+
