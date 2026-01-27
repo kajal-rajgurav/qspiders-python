@@ -180,3 +180,20 @@ class Student:
 s = Student(90)
 print(s.marks)
 
+# Example: Retry Decorator (Error Handling)
+def retry(func):
+    def wrapper(*args, **kwargs):
+        for i in range(3):   # try 3 times
+            try:
+                return func(*args, **kwargs)
+            except Exception as e:
+                print(f"Attempt {i+1} failed:", e)
+        print("All attempts failed")
+    return wrapper
+
+@retry
+def divide(a, b):
+    return a / b
+
+print(divide(10, 0))   # error case
+print(divide(10, 2))   # success case
