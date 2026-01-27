@@ -146,6 +146,25 @@ def multiply(a, b):
     print(a * b)
 
 multiply(4, 5)
+# Example 7: Multiple Decorators
+def decor1(func):
+    def wrapper():
+        print("Decorator 1")
+        func()
+    return wrapper
+
+def decor2(func):
+    def wrapper():
+        print("Decorator 2")
+        func()
+    return wrapper
+
+@decor1
+@decor2
+def show():
+    print("Hello")
+
+show()
 
 
 
