@@ -48,4 +48,10 @@ marks = 120
 if marks > 100:
     raise InvalidMarksError("Marks cannot exceed 100")
 
+# Real-Life Example (User Input Validation)
+try:
+    num = int(input("Enter a number: "))
+    print("Square:", num * num)
+except ValueError:
+    print("Please enter a valid integer")
 
