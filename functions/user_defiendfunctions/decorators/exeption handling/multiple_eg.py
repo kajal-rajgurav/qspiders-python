@@ -1,3 +1,12 @@
+# Basic try–except
+
+try:
+    x = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+
+
+
 # Handling Multiple Exceptions
 try:
     a = int("abc")
