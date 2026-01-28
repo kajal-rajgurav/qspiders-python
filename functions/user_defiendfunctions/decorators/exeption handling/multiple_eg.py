@@ -15,3 +15,15 @@ except ZeroDivisionError:
     print("Cannot divide by zero")
 else:
     print("Result:", y)
+
+
+
+# using finally 
+try:
+    file = open("data.txt", "r")
+    print(file.read())
+except FileNotFoundError:
+    print("File not found")
+finally:
+    print("File operation completed")
+
