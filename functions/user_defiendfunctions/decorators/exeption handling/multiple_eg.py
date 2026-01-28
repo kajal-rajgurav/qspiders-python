@@ -27,3 +27,14 @@ except FileNotFoundError:
 finally:
     print("File operation completed")
 
+
+    # Catching All Exceptions (Not Recommended Often ⚠️)
+
+try:
+    x = int(input("Enter number: "))
+    print(10 / x)
+except Exception as e:
+    print("Error:", e)
+
+
+
