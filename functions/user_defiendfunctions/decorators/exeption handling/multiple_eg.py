@@ -36,5 +36,16 @@ try:
 except Exception as e:
     print("Error:", e)
 
+# Custom Exception
+
+# Create your own exception.
+
+class InvalidMarksError(Exception):
+    pass
+
+marks = 120
+
+if marks > 100:
+    raise InvalidMarksError("Marks cannot exceed 100")
 
 
