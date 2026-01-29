@@ -21,3 +21,16 @@ class Bank:
 
 b = Bank(5000)
 b.show_balance()
+
+# 3. Inheritance Example
+class Animal:
+    def eat(self):
+        print("Animal eats food")
+
+class Dog(Animal):   # inheriting Animal
+    def bark(self):
+        print("Dog barks")
+
+d = Dog()
+d.eat()
+d.bark()
