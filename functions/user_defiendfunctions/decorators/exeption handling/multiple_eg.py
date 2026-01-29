@@ -1,33 +1,33 @@
 # Basic try–except
 
-try:
-    x = 10 / 0
-except ZeroDivisionError:
-    print("Cannot divide by zero")
+# try:
+#     x = 10 / 0
+# except ZeroDivisionError:
+#     print("Cannot divide by zero")
 
 
 
-# Handling Multiple Exceptions
-try:
-    a = int("abc")
-    b = 10 / 2
-except ValueError:
-    print("Value error occurred")
-except ZeroDivisionError:
-    print("Division by zero error")
+# # Handling Multiple Exceptions
+# try:
+#     a = int("abc")
+#     b = 10 / 2
+# except ValueError:
+#     print("Value error occurred")
+# except ZeroDivisionError:
+#     print("Division by zero error")
 
-# using else.
-try:
-    x = int(input("Enter a number: "))
-    y = 10 / x
-except ZeroDivisionError:
-    print("Cannot divide by zero")
-else:
-    print("Result:", y)
+# # using else.
+# try:
+#     x = int(input("Enter a number: "))
+#     y = 10 / x
+# except ZeroDivisionError:
+#     print("Cannot divide by zero")
+# else:
+#     print("Result:", y)
 
 
 
-# using finally 
+# # using finally 
 try:
     file = open("data.txt", "r")
     print(file.read())
@@ -37,30 +37,30 @@ finally:
     print("File operation completed")
 
 
-    # Catching All Exceptions (Not Recommended Often ⚠️)
+## Catching All Exceptions (Not Recommended Often ⚠️)
 
-try:
-    x = int(input("Enter number: "))
-    print(10 / x)
-except Exception as e:
-    print("Error:", e)
+# try:
+#     x = int(input("Enter number: "))
+#     print(10 / x)
+# except Exception as e:
+#     print("Error:", e)
 
-# Custom Exception
+# # Custom Exception
 
-# Create your own exception.
+# # Create your own exception.
 
-class InvalidMarksError(Exception):
-    pass
+# class InvalidMarksError(Exception):
+#     pass
 
-marks = 120
+# marks = 120
 
-if marks > 100:
-    raise InvalidMarksError("Marks cannot exceed 100")
+# if marks > 100:
+#     raise InvalidMarksError("Marks cannot exceed 100")
 
-# Real-Life Example (User Input Validation)
-try:
-    num = int(input("Enter a number: "))
-    print("Square:", num * num)
-except ValueError:
-    print("Please enter a valid integer")
+# # Real-Life Example (User Input Validation)
+# try:
+#     num = int(input("Enter a number: "))
+#     print("Square:", num * num)
+# except ValueError:
+#     print("Please enter a valid integer")
 
