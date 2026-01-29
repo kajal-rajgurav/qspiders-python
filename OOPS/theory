@@ -1,3 +1,10 @@
 // OOPS in Python means Object-Oriented Programming System. 
 // It is a programming style where we organize code using objects and classes, 
 // making programs easier to manage, reuse, and understand.
+
+// ✅ Class
+
+// Definition:
+// A class is a blueprint or template used to create objects. It defines the properties (variables) and behaviors (methods) that the objects will have.
+
+// 👉 Example: Class = Car design.
