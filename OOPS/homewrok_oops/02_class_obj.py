@@ -4,6 +4,24 @@ class car:
     year=2011
     ceo='ratan tata'
 
+
+
+# #################student class. ###############
+class Student:
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+
+    def display(self):
+        print("Student Name:", self.name)
+        print("Marks:", self.marks)
+
+
+# Creating object
+s1 = Student("Kajal", 85)
+s1.display()
+
+
 # perspm
 
 
@@ -28,10 +46,10 @@ p1.age = 25
 print(p1.name)
 print(p1.age)
 
-Using __init__() makes it easier to create objects with initial values:
+# Using __init__() makes it easier to create objects with initial values:
 
-Example
-With __init__(), you can set initial values when creating the object:
+# Example
+# With __init__(), you can set initial values when creating the object:
 
 class Person:
   def __init__(self, name, age):
@@ -42,13 +60,13 @@ p1 = Person("Linus", 28)
 
 print(p1.name)
 print(p1.age)
-The self Parameter
-The self parameter is a reference to the current instance of the class.
+# The self Parameter
+# The self parameter is a reference to the current instance of the class.
 
-It is used to access properties and methods that belong to the class.
+# It is used to access properties and methods that belong to the class.
 
-ExampleGet your own Python Server
-Use self to access class properties:
+# ExampleGet your own Python Server
+# Use self to access class properties:
 
 class Person:
   def __init__(self, name, age):
@@ -61,13 +79,13 @@ class Person:
 p1 = Person("Emil", 25)
 p1.greet()
 
-Note: The self parameter must be the first parameter of any method in the class.
+# Note: The self parameter must be the first parameter of any method in the class.
 
-Why Use self?
-Without self, Python would not know which object's properties you want to access:
+# Why Use self?
+# Without self, Python would not know which object's properties you want to access:
 
-Example
-The self parameter links the method to the specific object:
+# Example
+# The self parameter links the method to the specific object:
 
 class Person:
   def __init__(self, name):
@@ -82,11 +100,11 @@ p2 = Person("Linus")
 p1.printname()
 p2.printname()
 
-self Does Not Have to Be Named "self"
-It does not have to be named self, you can call it whatever you like, but it has to be the first parameter of any method in the class:
+# self Does Not Have to Be Named "self"
+# It does not have to be named self, you can call it whatever you like, but it has to be the first parameter of any method in the class:
 
-Example
-Use the words myobject and abc instead of self:
+# Example
+# Use the words myobject and abc instead of self:
 
 class Person:
   def __init__(myobject, name, age):
