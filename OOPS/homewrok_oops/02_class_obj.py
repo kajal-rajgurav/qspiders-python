@@ -60,3 +60,24 @@ class Person:
 
 p1 = Person("Emil", 25)
 p1.greet()
+
+Note: The self parameter must be the first parameter of any method in the class.
+
+Why Use self?
+Without self, Python would not know which object's properties you want to access:
+
+Example
+The self parameter links the method to the specific object:
+
+class Person:
+  def __init__(self, name):
+    self.name = name
+
+  def printname(self):
+    print(self.name)
+
+p1 = Person("Tobias")
+p2 = Person("Linus")
+
+p1.printname()
+p2.printname()
