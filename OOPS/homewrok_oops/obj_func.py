@@ -35,5 +35,22 @@ class BankAccount:
 # Object
 acc1 = BankAccount("Kajal", 5000)
 acc1.deposit(2000)
-acc1.show_balance()
-    
+
+# Example 3: Car Class
+class Car:
+    def __init__(self, brand, color):
+        self.brand = brand
+        self.color = color
+
+    def drive(self):
+        print(self.brand, "car is driving")
+
+# Objects
+car1 = Car("BMW", "Black")
+car2 = Car("Audi", "White")
+
+car1.drive()
+car2.drive()
+
+
+#  Same class, different objects, different data    
