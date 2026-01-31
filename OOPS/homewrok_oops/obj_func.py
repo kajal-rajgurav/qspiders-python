@@ -55,7 +55,7 @@ car2.drive()
 
 #  Same class, different objects, different data    
 
-Example 4: Employee Class (with Salary)
+# Example 4: Employee Class (with Salary)
 class Employee:
     def __init__(self, name, salary):
         self.name = name
@@ -71,7 +71,7 @@ emp1 = Employee("Kajal", 30000)
 emp1.increment()
 emp1.show()
 
-Example 5: Mobile Class
+# Example 5: Mobile Class
 class Mobile:
     def __init__(self, model, price):
         self.model = model
@@ -86,3 +86,11 @@ m2 = Mobile("Samsung", 60000)
 
 m1.details()
 m2.details()
+
+# Example 1: Constructor without parameters
+class Demo:
+    def __init__(self):
+        print("Constructor called")
+
+obj1 = Demo()
+obj2 = Demo()
