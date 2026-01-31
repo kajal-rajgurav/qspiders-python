@@ -70,3 +70,19 @@ class Employee:
 emp1 = Employee("Kajal", 30000)
 emp1.increment()
 emp1.show()
+
+Example 5: Mobile Class
+class Mobile:
+    def __init__(self, model, price):
+        self.model = model
+        self.price = price
+
+    def details(self):
+        print("Model:", self.model)
+        print("Price:", self.price)
+
+m1 = Mobile("iPhone", 80000)
+m2 = Mobile("Samsung", 60000)
+
+m1.details()
+m2.details()
