@@ -16,6 +16,26 @@
 
 # // 👉 Example: A specific car created from the car design.
 
+# Class vs Object (Exam Answer)
+# 🔸 Definition
+
+# Class:
+# A class is a blueprint or template used to create objects.
+# Class sirf design hota hai, memory tab tak allocate nahi hoti jab tak object na bane.
+
+# Object:
+# An object is a real instance of a class.
+# Object ke paas actual data hota hai aur memory allocate hoti hai.
+
+# 🔹 Tabular Difference (Very Important ⭐)
+# Class	Object
+# Class is a blueprint	Object is an instance
+# Logical entity	Real-world entity
+# No memory allocated	Memory allocated
+# Defines variables & methods	Uses variables & methods
+# Created once	Can create many objects
+# Example: class Student	Example: s1 = Student()
+
 # // ✅ Encapsulation
 
 # # // Definition:
