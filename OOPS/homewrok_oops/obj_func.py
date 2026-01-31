@@ -98,3 +98,16 @@ class Demo:
 
 obj1 = Demo()
 obj2 = Demo()
+
+# Example 2: Constructor with parameters
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def show(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+
+p1 = Person("Kajal", 22)
+p1.show()
