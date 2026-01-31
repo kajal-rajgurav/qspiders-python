@@ -111,3 +111,18 @@ class Person:
 
 p1 = Person("Kajal", 22)
 p1.show()
+
+
+# Example 3: Why self is important?
+class Test:
+    def __init__(self, x):
+        self.x = x
+
+t1 = Test(10)
+t2 = Test(20)
+
+print(t1.x)
+print(t2.x)
+
+
+# 👉 self ensures each object has its own data
