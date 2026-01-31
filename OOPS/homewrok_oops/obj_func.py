@@ -54,3 +54,19 @@ car2.drive()
 
 
 #  Same class, different objects, different data    
+
+Example 4: Employee Class (with Salary)
+class Employee:
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+
+    def increment(self):
+        self.salary += 5000
+
+    def show(self):
+        print(self.name, "-", self.salary)
+
+emp1 = Employee("Kajal", 30000)
+emp1.increment()
+emp1.show()
