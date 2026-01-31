@@ -86,7 +86,11 @@ m2 = Mobile("Samsung", 60000)
 
 m1.details()
 m2.details()
+# 1. Constructor (__init__) 
 
+# 👉 Constructor is a special method
+# 👉 It automatically runs when an object is created
+# 👉 Used to initialize data (values)
 # Example 1: Constructor without parameters
 class Demo:
     def __init__(self):
