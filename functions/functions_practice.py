@@ -17,3 +17,14 @@ def factorial(n):
 num = int(input("Enter a number: "))
 print("Factorial =", factorial(num))
 
+# 3️⃣ Program to Check Even or Odd using Function
+def even_odd(n):
+    if n % 2 == 0:
+        print("Even Number")
+    else:
+        print("Odd Number")
+
+num = int(input("Enter a number: "))
+even_odd(num)
+
+
