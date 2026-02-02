@@ -23,3 +23,4 @@ e1=company('alex',101,9900223344,'alex@gmail.com',40000)
 e2=company('jim',102,9990223344,'jim@gmail.com',70000)
 e3=company('tim',107,9998223344,'tim@gmail.com',20000)
 
+e3=company('tim',107,9998223344,'tim@gmail.com',20000)
