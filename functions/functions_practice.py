@@ -126,4 +126,47 @@ while True:
         break
     else:
         print("Invalid choice")
+#################################################################################
 
+library = {}
+
+def add_book():
+    book_id = int(input("Enter Book ID: "))
+    name = input("Enter Book Name: ")
+    library[book_id] = {"name": name, "issued": False}
+    print("Book added")
+
+def issue_book():
+    book_id = int(input("Enter Book ID: "))
+    if book_id in library and not library[book_id]["issued"]:
+        library[book_id]["issued"] = True
+        print("Book issued")
+    else:
+        print("Book not available")
+
+def return_book():
+    book_id = int(input("Enter Book ID: "))
+    if book_id in library and library[book_id]["issued"]:
+        library[book_id]["issued"] = False
+        print("Book returned")
+    else:
+        print("Invalid operation")
+
+def display_books():
+    for book in library.values():
+        print(book)
+
+while True:
+    print("\n1.Add 2.Issue 3.Return 4.Display 5.Exit")
+    c = int(input("Enter choice: "))
+
+    if c == 1:
+        add_book()
+    elif c == 2:
+        issue_book()
+    elif c == 3:
+        return_book()
+    elif c == 4:
+        display_books()
+    elif c == 5:
+        break
