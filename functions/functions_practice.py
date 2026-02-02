@@ -27,4 +27,53 @@ def even_odd(n):
 num = int(input("Enter a number: "))
 even_odd(num)
 
+students = []
+
+def add_student():
+    roll = int(input("Enter Roll No: "))
+    name = input("Enter Name: ")
+    marks = float(input("Enter Marks: "))
+    students.append({"roll": roll, "name": name, "marks": marks})
+    print("Student added successfully!")
+
+def display_students():
+    if not students:
+        print("No records found")
+        return
+    for s in students:
+        print(s)
+
+def search_student():
+    roll = int(input("Enter Roll No to search: "))
+    for s in students:
+        if s["roll"] == roll:
+            print("Found:", s)
+            return
+    print("Student not found")
+
+def delete_student():
+    roll = int(input("Enter Roll No to delete: "))
+    for s in students:
+        if s["roll"] == roll:
+            students.remove(s)
+            print("Student deleted")
+            return
+    print("Student not found")
+
+while True:
+    print("\n1.Add  2.Display  3.Search  4.Delete  5.Exit")
+    choice = int(input("Enter choice: "))
+
+    if choice == 1:
+        add_student()
+    elif choice == 2:
+        display_students()
+    elif choice == 3:
+        search_student()
+    elif choice == 4:
+        delete_student()
+    elif choice == 5:
+        break
+    else:
+        print("Invalid choice")
 
