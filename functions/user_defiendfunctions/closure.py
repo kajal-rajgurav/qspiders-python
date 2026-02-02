@@ -24,7 +24,7 @@ def registration(name,phno,gmail,alt_phno=None,alt_gmail=None):
                      'alt_gmail':alt_gmail})
     return 'registration is succesfull'
 print()
-
-
-    
-
+a=10
+b=20
+c=a+b
+print(c)
