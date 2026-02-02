@@ -18,7 +18,7 @@ class ATM:
         else:
             print("insufficient balace")
 user1=ATM("kajal",5000,"malad")
-# user1=ATM("riya",8000,"andheri")  ## this area
+user2=ATM("riya",8000,"andheri")  ## this area
 
 #####object####
 
@@ -26,5 +26,9 @@ user1.check_balance()
 user1.deposit(int(input("enter your deposit amount:-")))
 user1.widrawl(int(input("enter widrawl amount:-")))
 user1.check_balance()
+user2.check_balance()
+user2.deposit(int(input("enter your deposit amount:-")))
+user2.widrawl(int(input("enter widrawl amount:-")))
+user2.check_balance()
 
 

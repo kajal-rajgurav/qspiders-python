@@ -15,3 +15,4 @@ c2.address='shivaji ngr,ANDHERI(w)'
 c2.ifsc_code='BOB34500'
 print(c1.name)
 print(c2.ph_no)
+print(c1.Ceo)

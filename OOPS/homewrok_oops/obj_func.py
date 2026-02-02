@@ -73,15 +73,17 @@ emp1.show()
 
 # Example 5: Mobile Class
 class Mobile:
-    def __init__(self, model, price):
+    def __init__(self, model, price,loc=None):
         self.model = model
         self.price = price
+        self.loc=loc
 
     def details(self):
         print("Model:", self.model)
         print("Price:", self.price)
+        print("loc:",self.loc)
 
-m1 = Mobile("iPhone", 80000)
+m1 = Mobile("iPhone", 80000,None)
 m2 = Mobile("Samsung", 60000)
 
 m1.details()
