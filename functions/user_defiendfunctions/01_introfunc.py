@@ -18,3 +18,35 @@ print(add())
 def mul(a,b,c):
     return a*b*c
 print(mul(1,2,3))
+
+
+
+###########################################################
+
+1. Student Management System (Reduced)
+students = []
+
+while True:
+    print("\n1.Add 2.Display 3.Search 4.Delete 5.Exit")
+    ch = int(input("Choice: "))
+
+    if ch == 1:
+        students.append({
+            "roll": int(input("Roll: ")),
+            "name": input("Name: "),
+            "marks": float(input("Marks: "))
+        })
+
+    elif ch == 2:
+        print(students if students else "No records")
+
+    elif ch == 3:
+        r = int(input("Roll: "))
+        print(next((s for s in students if s["roll"] == r), "Not found"))
+
+    elif ch == 4:
+        r = int(input("Roll: "))
+        students[:] = [s for s in students if s["roll"] != r]
+
+    elif ch == 5:
+        break
