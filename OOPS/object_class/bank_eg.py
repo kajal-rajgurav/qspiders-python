@@ -1,4 +1,4 @@
-Updated BankAccount Class (with MORE methods)
+# Updated BankAccount Class (with MORE methods)
 class BankAccount:
     interest_rate = 0.04
 
@@ -78,3 +78,15 @@ class BankAccount:
             print(t)
         print("*" * 40)
         print(f"Current balance: {self.balance}")
+c1 = BankAccount("Steve", 1000)
+c2 = BankAccount("Bill", 2000)
+
+c1.deposit(500)
+c1.withdraw(200)
+c1.transfer(c2, 300)
+
+print("Is Steve rich?", c1.is_rich())
+print("Last transaction:", c1.last_transaction())
+print("Total transactions:", c1.get_transaction_count())
+
+c1.statement()
