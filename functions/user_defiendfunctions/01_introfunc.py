@@ -76,3 +76,25 @@ while True:
 
     elif ch == 5:
         break
+
+#####################################################333
+3. Library Management System (Reduced)
+library = {}
+
+while True:
+    print("\n1.Add 2.Issue 3.Return 4.Display 5.Exit")
+    ch = int(input("Choice: "))
+
+    if ch == 1:
+        library[int(input("ID: "))] = False
+
+    elif ch in [2, 3]:
+        i = int(input("ID: "))
+        if i in library:
+            library[i] = ch == 2
+
+    elif ch == 4:
+        print(library)
+
+    elif ch == 5:
+        break
