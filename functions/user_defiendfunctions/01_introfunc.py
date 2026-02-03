@@ -132,3 +132,14 @@ while True:
 
     elif c == 4:
         break
+###########################################
+# 3. Electricity Bill Calculation
+u = int(input("Units: "))
+bill = 0
+
+if u > 100:
+    bill = (u-100)*5 + 500
+else:
+    bill = u*5
+
+print("Bill:", bill)
