@@ -38,6 +38,9 @@ class company:
     @classmethod
     def greet(cls):
         return 'Welcome to the Apple company'
+    def ch_phno(self,new_phno):
+            self.phno=new_phno
+            return "phone number is updated"
 
 
 e1 = company('alex', 101, 9900223344, 'alex@gmail.com', 40000)
