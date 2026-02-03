@@ -50,3 +50,29 @@ while True:
 
     elif ch == 5:
         break
+
+#####################################################
+2. Bank Management System (Reduced)
+bank = {}
+
+while True:
+    print("\n1.Create 2.Deposit 3.Withdraw 4.Balance 5.Exit")
+    ch = int(input("Choice: "))
+
+    if ch == 1:
+        bank[int(input("Acc No: "))] = 0
+
+    elif ch in [2, 3]:
+        acc = int(input("Acc No: "))
+        amt = float(input("Amount: "))
+        if acc in bank and (ch != 3 or bank[acc] >= amt):
+            bank[acc] += amt if ch == 2 else -amt
+        else:
+            print("Error")
+
+    elif ch == 4:
+        acc = int(input("Acc No: "))
+        print(bank.get(acc, "Not found"))
+
+    elif ch == 5:
+        break
