@@ -111,3 +111,24 @@ while True:
     elif op == '*': print(a * b)
     elif op == '/': print(a / b if b != 0 else "Error")
     elif op == 'x': break
+##########################################
+# 2. Employee Payroll System
+emps = {}
+
+while True:
+    print("\n1.Add 2.Salary 3.View 4.Exit")
+    c = int(input())
+
+    if c == 1:
+        i = int(input("ID: "))
+        emps[i] = float(input("Basic: "))
+
+    elif c == 2:
+        i = int(input("ID: "))
+        print("Salary:", emps[i] + 0.2*emps[i])
+
+    elif c == 3:
+        print(emps)
+
+    elif c == 4:
+        break
