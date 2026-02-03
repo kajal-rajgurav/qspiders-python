@@ -98,3 +98,16 @@ while True:
 
     elif ch == 5:
         break
+
+###########################################
+# 1. Simple Calculator (Reduced)
+while True:
+    a = float(input("A: "))
+    b = float(input("B: "))
+    op = input("+, -, *, / or x: ")
+
+    if op == '+': print(a + b)
+    elif op == '-': print(a - b)
+    elif op == '*': print(a * b)
+    elif op == '/': print(a / b if b != 0 else "Error")
+    elif op == 'x': break
