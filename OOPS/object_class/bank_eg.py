@@ -84,9 +84,11 @@ c2 = BankAccount("Bill", 2000)
 c1.deposit(500)
 c1.withdraw(200)
 c1.transfer(c2, 300)
+c1.change_name('kajal')
 
 print("Is Steve rich?", c1.is_rich())
 print("Last transaction:", c1.last_transaction())
 print("Total transactions:", c1.get_transaction_count())
 
 c1.statement()
+
