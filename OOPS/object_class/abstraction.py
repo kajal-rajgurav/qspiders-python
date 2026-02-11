@@ -1,4 +1,7 @@
-class BankAccount:
+from abc import abstractmethod,ABC
+
+
+class BankAccount(ABC):
     interest_rate = 0.04  # 4%
 
     def __init__(self, name, balance):
@@ -7,7 +10,7 @@ class BankAccount:
         self.transactions = []
         self.transactions.append(f"Initial balance: {balance}")
         print(f"Account created for {self.name}")
-
+    @abstractmethod
     def deposit(self, amount):
         if amount <= 0:
             raise ValueError("Amount should be greater than zero")
