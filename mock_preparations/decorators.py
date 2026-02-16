@@ -27,3 +27,22 @@ def dashboard():
     print("Dashboard loaded")
 
 dashboard()
+
+
+
+# 2.Print something before & after function
+def my_decorator(func):
+
+    def wrapper():
+        print("Before function")
+        func()
+        print("After function")
+
+    return wrapper
+
+
+@my_decorator
+def hello():
+    print("Hello Kajal")
+
+hello()
