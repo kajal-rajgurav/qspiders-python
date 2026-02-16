@@ -46,3 +46,35 @@ def hello():
     print("Hello Kajal")
 
 hello()
+
+
+# Deep understanding
+
+# Python does:
+
+# hello = my_decorator(hello)
+
+
+# Now hello() actually calls wrapper().
+
+# Original hello() is INSIDE wrapper.
+# EXAMPLE 2 – DECORATOR WITH PARAMETERS
+# =====================
+
+# Function takes arguments.
+
+def my_decorator(func):
+
+    def wrapper(name):
+        print("Welcome")
+        func(name)
+        print("Bye")
+
+    return wrapper
+
+
+@my_decorator
+def greet(name):
+    print("Hello", name)
+
+greet("Kajal")
