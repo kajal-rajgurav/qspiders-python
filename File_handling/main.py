@@ -29,3 +29,16 @@ with open('demo.txt','a')as f:
 # "x"	Create new file
 # "rb"	Read binary
 # "wb"	Write binary
+
+
+
+ip_address = []
+
+with open(r"C:\Users\rajgu\OneDrive\Desktop\Qspiders_practice\python\demo.txt") as file:
+    for line in file:
+        parts = line.split()
+
+        if len(parts) >= 3:          # IMPORTANT
+            ip_address.append(parts[2].strip(','))
+
+print(ip_address)

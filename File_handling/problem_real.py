@@ -1,5 +1,5 @@
 from time import sleep
-ip_address=[]
-with open(r"C:\Users\rajgu\OneDrive\Desktop\Qspiders_practice\python\demo.txt")as file:
+ip_address=[]as file:
     for line in file:
-        
+        ip_address.append(line.split()[2].strip(','))
+        print(len(ip_address))
