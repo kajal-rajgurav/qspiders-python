@@ -18,3 +18,14 @@
 with open('demo.txt','a')as f:
     f.write('\nkajal\n')
     f.writelines(['abc\n','adsvd\n','adfs\n'])
+
+
+#####################################################
+# Common File Modes
+# Mode	Meaning
+# "r"	Read (file must exist)
+# "w"	Write (creates / overwrites file)
+# "a"	Append (adds data at end)
+# "x"	Create new file
+# "rb"	Read binary
+# "wb"	Write binary
