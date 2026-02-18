@@ -1,7 +1,3 @@
-kajal
-abc
-bcd
-bv
 IP Address: 172.16.0.5, Search Query: "bluetooth headphones", Timestamp: 2025-08-27 12:44:09, Product Category: Home Appliances, Device Type: Mobile
 IP Address: 203.0.113.23, Search Query: "kitchen blender", Timestamp: 2025-09-03 12:44:09, Product Category: Food & Beverage, Device Type: Mobile
 IP Address: 203.0.113.23, Search Query: "smartphone case", Timestamp: 2025-09-01 12:44:09, Product Category: Food & Beverage, Device Type: Mobile
@@ -1002,6 +998,11 @@ IP Address: 203.0.113.15, Search Query: "wireless mouse", Timestamp: 2025-09-11 
 IP Address: 10.0.0.12, Search Query: "4K TV", Timestamp: 2025-08-30 12:44:09, Product Category: Accessories, Device Type: Desktop
 IP Address: 198.51.100.25, Search Query: "men's running shoes", Timestamp: 2025-09-12 12:44:09, Product Category: Electronics, Device Type: Desktop
 IP Address: 198.51.100.8, Search Query: "kitchen blender", Timestamp: 2025-09-15 12:44:09, Product Category: Food & Beverage, Device Type: Desktop
+
+kajal
+abc
+adsvd
+adfs
 
 kajal
 abc

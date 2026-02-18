@@ -34,7 +34,7 @@ with open('demo.txt','a')as f:
 
 ip_address = []
 
-with open(r"C:\Users\rajgu\OneDrive\Desktop\Qspiders_practice\python\demo.txt") as file:
+with open('demo.txt','r')as file:
     for line in file:
         parts = line.split()
 
