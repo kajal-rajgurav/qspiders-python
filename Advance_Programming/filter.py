@@ -16,3 +16,27 @@ def is_even(x):
 result = filter(is_even, numbers)
 
 print(list(result))
+
+# Using lambda
+numbers = [1, 2, 3, 4, 5, 6]
+
+result = filter(lambda x: x > 3, numbers)
+
+print(list(result))
+
+2️⃣ filter() → “Condition pass karo”
+
+Ab same list:
+
+numbers = [1, 2, 3, 4, 5, 6]
+
+Tum chahte ho sirf even numbers.
+
+Normal way:
+
+new = []
+for i in numbers:
+    if i % 2 == 0:
+        new.append(i)
+
+print(new)
