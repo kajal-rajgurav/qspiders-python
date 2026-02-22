@@ -43,3 +43,23 @@ for index, value in enumerate(fruits):
 # 0 apple
 # 1 banana
 # 2 mango
+
+
+#  zip() Function
+# 👉 What is zip()?4️
+
+# zip() combines two or more lists together.
+
+# Simple words:
+
+# “Do lists ko pair bana ke join karna”
+
+# 🔹 Example:
+names = ["Kajal", "Riya", "Simran"]
+marks = [85, 90, 88]
+
+result = zip(names, marks)
+
+print(list(result))
+# Output:
+# [('Kajal', 85), ('Riya', 90), ('Simran', 88)]
