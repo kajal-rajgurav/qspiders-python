@@ -24,19 +24,31 @@ result = filter(lambda x: x > 3, numbers)
 
 print(list(result))
 
-2️⃣ filter() → “Condition pass karo”
 
-Ab same list:
+# 3️⃣ enumerate() Function
+# 👉 What is enumerate()?
 
-numbers = [1, 2, 3, 4, 5, 6]
+# enumerate() gives index + value together.
 
-Tum chahte ho sirf even numbers.
+# Simple words:
 
-Normal way:
+# “Index bhi chahiye aur value bhi chahiye”
 
-new = []
-for i in numbers:
-    if i % 2 == 0:
-        new.append(i)
+# 🔹 Example:
+fruits = ["apple", "banana", "mango"]
 
-print(new)
+for index, value in enumerate(fruits):
+    print(index, value)
+# Output:
+# 0 apple
+# 1 banana
+# 2 mango
+Start index from 1
+for index, value in enumerate(fruits, start=1):
+    print(index, value)
+
+Output:
+
+1 apple
+2 banana
+3 mango
