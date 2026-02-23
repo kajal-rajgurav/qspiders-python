@@ -9,29 +9,29 @@ s1="the theory of relativity the "
 ##print(out)
         
 s2="The dragging belly indicates your cat is too fat"
-##print(findall('cat',s2))
+print(findall('cat',s2))
 
 s3='python and java are object oriented'
 print(findall('python',s3))
 
 s4='hello how are you doing anna'
-##print(findall('anna',s4))
+print(findall('anna',s4))
 s5='hello how are you doing anna, aeiou'
-##print(findall('aeiou',s5))
+print(findall('aeiou',s5))
 
 # --------------------------------------------------------------------------
 # Matches with both "Smith" and "smith"
 s6='Smith and blacksmith'
-##print(findall('[Ss]mith',s6))
+print(findall('[Ss]mith',s6))
 
 # Matches "separate" or "saperate"
 s='the two thing are separate by one thing ,and it will going to saperate'
-##print(findall('s[ae]p[ae]rate',s))
+print(findall('s[ae]p[ae]rate',s))
 # Matches "grey" and "gray"
 
 # Match any one character in the character set (either a, e, i, o, u)
 s7='hello how are you doing anna'
-##print(len(findall('[aeiou]',s7)))
+print(len(findall('[aeiou]',s7)))
 
 
 # Match either a, b, c, d
@@ -43,54 +43,63 @@ print(findall('[0-9]',s8))
 
 
 # Matching HTML headers
+tag='<h1>hello</h1>'
+print(findall('h[1-6]',tag))
 # Matches any number between 0-9
 s9='The cost of the book is Rs.100'
+# print(findall())
 
 # Matches only lower case letters
 s10='hello HOW ARE YOU'
+print(findall('[a-z]',s10))
 
 # Matches only upper case letters
 s11='hello HOW ARE YOU'
+print(findall('[A-Z]',s11))
 
 # Matches all upper case and lower case characters
 s12='hello HOW ARE YOU'
+print(findall('[A-Za-z]',s12))
 
 # Matches any number between 1-6
 # --------------------------------------------------------------------------
 # Count total number of Upper case and Lower case letters
 sentence = "Hello World Welcome To Python"
-
-
+print(len(findall('[A-Za-z]',sentence)))
 # --------------------------------------------------------------------------
 # Write a program to count the number of white spaces in a given string
 sentence = "Hello world welcome to Python Hi  How are you. Hi how are you"
-# --------------------------------------------------------------------------
-# --------------------------------------------------------------------------
+print(len(findall(r'\s',sentence)))
 # matches one or more occurances of "n" between two "a"'s
-s13='annnnnnnnnnna'
+s13='banana'
+print(findall('[ban+a]+',s13))
 # matches any digit between 0-9 as long as there is a match
 s14='The cost of the book is Rs.100'
-
+print(findall('[0-9]+',s14))
 
 # matches lower case alphabets between as long as there is a match
 s15="hello worLD Welcome To Python Programming Pyt123on"
+print(findall('[a-z]+',s15))
 # --------------------------------------------------------------------------
 # Sum all the numbers in the below string.
 # --------------------------------------------------------------------------
 word = "Pytho12nReg567exp2" # 1 + 2 + 5 + 6 + 7 + 2
+print(sum(map(int,(findall('[0-9]',word)))))
 
 # Adding 12 + 567 + 2
-
+print(sum(map(int,(findall('[0-9]+',word)))))
 # --------------------------------------------------------------------------
 # Meta Character "?" (matches 0 or 1 occurance of previous expression)
 # --------------------------------------------------------------------------
 s16="what color do you like"
+print(findall('colou?r',s16))
 
 s17='https://www.google.com'
+print(findall('https?',s17))
 
-s18='https?://', 'http://www.google.com'
 
 s19="Jul the 26th day"
+print(findall('July?',s19))
 
 
 # --------------------------------------------------------------------------
@@ -98,25 +107,32 @@ s19="Jul the 26th day"
 # --------------------------------------------------------------------------
 # Matches everything apart from numbers between 0-9
 s20='The cost of the book is Rs.100'
+# ^it use to match appart from that character set.
+print(findall(r'[^0-9]',s20))
 
 # Matches everything apart from alphabets 'a', 'b', 'c' and 'd'
-
+print(findall(r'[^a-d]+',s20))
 
 # Matches everything apart from numbers between 0-9
 s21='The cost of the book is Rs.100'
-
+print(findall(r'[^0-9]+',s21))
 
 
 # Match only those characters excepts digits
 word = '@hello12world34welcome!123'
+print(findall(r'[^0-9]+',word))
 
 # Count the number of special characters in the below string
 sentence = 'hello@world! welcome!!! Python$ hi26 how are you & where are you?'
+print((findall(r'[^A-Za-z0-9\s]',sentence)))
 # -------------------------------------------------------------------------------------------------
 # Starts with "^" and ends with "$"
+
 # -------------------------------------------------------------------------------------------------
 s22='Hello world'
-
+print(findall('^Hello',s22))
+s23='Hello'
+print(findall('^Hello$',s23))
 
 # string starts with "hello" and ends with "hello" (meaning exactly one word is allowed in the str)
 WB= "what a beautiful day today is"#extact day
