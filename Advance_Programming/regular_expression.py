@@ -255,8 +255,8 @@ _formats = ['00:00:00', '23:59:59', '24:00:00', '1:59:20', '12:9:10', '10:20:8']
 # escaping meta characters
 # ------------------------------------------------------------------------------------------------------------
 # Count the number of occurances of question marks ("?") in the below string
-line = "hello there.. how are you? how is it going?? what are you doing? ... "
-
+line = "hello there.. how are you? how is it going?? what are you doing? ... "(print)
+print(len(findall(r'\?',line)))
 # Count the number of occurances of dots(".") in the below string
 line = "hello there..... how are you? how is it going?? what are you doing? ... "
 
