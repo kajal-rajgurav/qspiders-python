@@ -197,12 +197,16 @@ sd1='Pincode of Bangalore is 560001 and the number is 1234567890'
 sd3="654 this string is starting with and ending with numbers 289423784612"
 
 # Phone Number pattern (4DIGITS-3DIGITS-3DIGITS)
-phno='456-9832-098'
+phno='4556-678-098'
+print(findall(r'\d{4}-\d{3}-\d{3}',phno))
 
 # Regular Expression - IP Addresses
 ips = ['10.1.2.3', '127.0.0.0', '199.99.9.9', '199.9.9999.9', '127-0-0-0']
-
+for ip in ips:
+    print(findall(r'(\d{3}.\d{2}.\d{1}.\d{1})',ip))
 # matching only 800 and 900 numbers
+sd3="954 this string is starting with and ending with numbers 289423784612"
+
 
 # Extract only 4 digit numbers from the string
 sd4="Copyright 1998. All rights reserved"
@@ -220,26 +224,33 @@ sentence = "hello hi how are you what is your name he is older than me how old a
 
 # Regular expression for matching the words which starts with "he"
 sentence = "he helps the community and he is the hero of the day"
+print(findall(r'he[a-z]?',sentence))#for only one char
+print(findall(r'he[a-z]+',sentence))# for one or more char
+print(findall(r'\bhe[a-z]*\b',sentence)) #for 0 or more char \b is for word boundary
 # -------------------------------------------------------------------------------------------------------
 # Groups ( )
 # -------------------------------------------------------------------------------------------------------------
 # Matches either "python" or "java"
 py='python and java are object oriented'
+print(findall(r'(python|java)',py))
 
 # Regular Expression for Matching Inbox, Inbox(1), .... Inbox(N)
-
+s='Inbox(23)'
+print(findall(r'Inbox\(?\d*\)?',s))
 # Regular expression for matching the words which either starts with "he" or "se"
 sentence = "he helps the community and he is the hero of the day she sells sea shells on the sea shore"
-
+print(findall(r'\b(he|se)[a-z]*\b',sentence))
 # Match only those lines that were logged in year 98 
 # Regular Expression - YYYY-MM-DD date format
 _dates = ['2019-01-02', '2019-13-02', '2019-12-26', '26-08-2019', '20-19-20', '2019-12-31', '2019-12-32']
-
+print(findall(r'\d,_dates))
 # Regular Expression - 24hr time format
 _formats = ['00:00:00', '23:59:59', '24:00:00', '1:59:20', '12:9:10', '10:20:8']
 
 # Regular Expression - 24hr time format
 _formats = ['00:00:00', '23:59:59', '24:00:00', '1:59:20', '12:9:10', '10:20:8']
+
+
 # ------------------------------------------------------------------------------------------------------------
 # escaping meta characters
 # ------------------------------------------------------------------------------------------------------------
