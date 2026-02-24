@@ -243,7 +243,7 @@ print(findall(r'\b(he|se)[a-z]*\b',sentence))
 # Match only those lines that were logged in year 98 
 # Regular Expression - YYYY-MM-DD date format
 _dates = ['2019-01-02', '2019-13-02', '2019-12-26', '26-08-2019', '20-19-20', '2019-12-31', '2019-12-32']
-print(findall(r'\d,_dates))
+print(findall(r'\d{4}-\d{2}-\d{2}',str(_dates)))
 # Regular Expression - 24hr time format
 _formats = ['00:00:00', '23:59:59', '24:00:00', '1:59:20', '12:9:10', '10:20:8']
 
