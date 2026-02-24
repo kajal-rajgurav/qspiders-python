@@ -136,6 +136,7 @@ print(findall('^Hello$',s23))
 
 # string starts with "hello" and ends with "hello" (meaning exactly one word is allowed in the str)
 WB= "what a beautiful day today is"#extact day
+print(findall(r'\bday\b',WB))
 
 # -------------------------------------------------------------------------------------------------
 # Word Boundary (\b) The expression should be a word boundry 
@@ -148,15 +149,18 @@ WB= "what a beautiful day today is"#extact day
 
 # Regular expression which matches words that starts with "h"
 s23='hello world hi hello universe how are you happy birthday'
+print(findall(r'\bh[a-z]+',s23))
 
 # Regular expression which matches words that starts with "P or J"
 s24='Python is a programming language. Python is easier than Java'
+print(findall(r'\b[PJ][a-z]+',s24))
 
 # Regular expression which matches words that ends with "y"
 s25='hello world hi hello universe how are you happy birthday feeling very sleepy flying'
-
+print(findall(r'[a-z]+y\b',s25))
 # print only those words starting with vowel character
 sentence = "hello hi american english and indian ocean united states"
+print(findall(r'\b[aeiou][a-z]*',sentence))
 
 # Matches only Capital Letter words
 s26="This is PYTHON programming LANGUAGE and REGEX"
@@ -169,27 +173,64 @@ s28="downloading apple.pdf to downloads folder"
 
 # Different Combintations
 line = "03/22 08:51:06 WARNING :.....mailslot_create: setsockopt(MCAST_ADD) failed - EDC8116I Address not available."
+
 # ------------------------------------------------------------------------------------------------------------
+from time import sleep
 # Count the number of white spaces in the file
+with open(r"C:\Users\rajgu\OneDrive\Desktop\Qspiders_practice\python\Advance_Programming\sample A13 (1).log") as file:
+    sum=0
+    for line in file:
+        sum+=len(findall(r'\s',line))
+    print(sum)
+
 # -------------------------------------------------------------------------------------------------------
 # Count the number of Capital Letter words in the file
+def count_patterns(path,pattern):
+    with open(path) as file:
+        sum=0
+        for line in file:
+            sum+=len(findall(pattern,line))
+        return sum
+# count_patterns=lambda path,pattern:sum(map(lambda line:len(findall(pattern,line)),open(path)))
+file_path=r"C:\Users\rajgu\OneDrive\Desktop\Qspiders_practice\python\Advance_Programming\sample A13 (1).log"
+ws=count_patterns(file_path,r'\s')
+print(f'numebr of white spaces {ws}')
+cap_letter=count_patterns(file_path,r'\b[A-Z]+\b')
+print(f'number of capital letter{cap_letter}')
 # -------------------------------------------------------------------------------------------------------
 # Count the number of INFO, TRACE, WARNING, EVENT messages in the file
+info=count_patterns(file_path,r'\bINFO\b')
+print(f'number of info msg{info}')
+trace=count_patterns(file_path,r'\bTRACE\b')
+print(f'number of trace msg{trace}')
+warning=count_patterns(file_path,r'\bWARNING\b')
+print(f'number of warning msg{warning}')
+event=count_patterns(file_path,r'\bEVENT\b')
+print(f'number of event msg{event}')
+
 # -------------------------------------------------------------------------------------------------------
 # Matches all digits
 # -------------------------------------------------------------------------------------------------------
 sd="654 this string is starting with 12 and ending with numbers 289423784612 890"
+print(findall(r'\d',sd))
+
 
 # Matches whole numbers
+print(findall(r'\d+',sd))
 
 # Matches sequence of all 3 digit pattern
+print(findall(r'\d{3}',sd))
 
 # Matches exactly 3 digit numbers
-
+print(findall(r'\b\d{3}\b',sd))
 # Matches the string that ends with 3 digit number
+
+print(findall(r'^\d{3}',sd))
+print(findall(r'\d{3}$',sd))
 
 # Matches excatly 6 digit numbers
 sd1='Pincode of Bangalore is 560001 and the number is 1234567890'
+print(findall(r'\b\d{6}\b',sd1))
 
 # Matches the string that starts with 3 digit number
 sd3="654 this string is starting with and ending with numbers 289423784612"
