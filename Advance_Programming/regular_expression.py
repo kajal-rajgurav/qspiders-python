@@ -1,4 +1,4 @@
-from  re import findall
+from  re import findall,sub
 s1="the theory of relativity the "
 ##print(findall('the',s1))
 
@@ -283,9 +283,11 @@ print(findall(r'\b(he|se)[a-z]*\b',sentence))
 # Regular Expression - YYYY-MM-DD date format
 _dates = ['2019-01-02', '2019-13-02', '2019-12-26', '26-08-2019', '20-19-20', '2019-12-31', '2019-12-32']
 
+
 # Regular Expression - 24hr time format
 _formats = ['00:00:00', '23:59:59', '24:00:00', '1:59:20', '12:9:10', '10:20:8']
-
+for tm in _formats:
+    print(findall(r'(?:[01]\d|2[0-3]):[0-5]\d:[0-5]\d',tm))
 # Regular Expression - 24hr time format
 _formats = ['00:00:00', '23:59:59', '24:00:00', '1:59:20', '12:9:10', '10:20:8']
 
@@ -295,28 +297,33 @@ _formats = ['00:00:00', '23:59:59', '24:00:00', '1:59:20', '12:9:10', '10:20:8']
 # ------------------------------------------------------------------------------------------------------------
 # Count the number of occurances of question marks ("?") in the below string
 line = "hello there.. how are you? how is it going?? what are you doing? ... "
-
+print(len(findall(r'\?',line)))
 # Count the number of occurances of dots(".") in the below string
 line = "hello there..... how are you? how is it going?? what are you doing? ... "
-
+print(len(findall(r'\.',line)))
 # Count the number of occurances of stars ("*") in the below string
 line = "hello there..... how are you? *** how is it going?? what * are you  ** doing? ... "
+print(len(findall(r'\*',line)))
 #---------------------------------------------------------------------------------------
 # Replacing patterns
 # ------------------------------------------------------------------------------------------------------
 # Replace all vowels with "*"
 sentence = "hello world welcome to python"
+print(sub('[aeiou]','*',sentence))
 
 # Replace all occurances of digits with "*"
 
 # Replace all occurances of special characters with "*"
 sentence = 'hello#$%world welcome@!#$%to python*&^%'
+print(sub(r'[^A-Za-z0-9]','*',sentence))
 #Replace "And" with "&"
 sentence = "Java and Python are programming languages"
+print(sub('and','&',sentence))
 # ------------------------------------------------------------------------------------------------------------
 # ------------------------------------------------------------------------------------------------------------
 # Replace whitespaces with newline character in the below string
 sentence = "Hello world welcome to python"
+print(sub('r\s','\n',sentence))
 # ------------------------------------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------------------------------
 # dot "." matches with everything
