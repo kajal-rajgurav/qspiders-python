@@ -21,3 +21,5 @@ print(arr3)
 # print(np.ndim(arr3))
 
 print(arr3[1, 1, 0])
+
+
