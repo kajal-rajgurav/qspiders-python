@@ -53,25 +53,25 @@
 # ABCD
 # ABCDE
 
-# for i in range(1, 6):
-#     for j in range(i):
-#         print(chr(65 + j), end=" ")
-#     print()
+for i in range(1, 6):
+    for j in range(i):
+        print(chr(65 + j), end=" ")
+    print()
 
-# for i in range(ord('A'),6):
-#     for j in range(i):
-#         print(chr(65+i),end='')
-#     print()
+for i in range(ord('A'),6):
+    for j in range(i):
+        print(chr(65+i),end=" ")
+    print()
 
 
 # abc
 
 
-* * * * *
-*
-*
-*
-* *
+# * * * * *
+# *
+# *
+# *
+# * *
 
 
 
@@ -81,23 +81,23 @@
 
 
 
-# *****
-# *   *
-# *   *
-# *   *
-# *****
-row=10
-col=10
-for i in range(1,row+1):
-    if i in (1,row):
-        print("* "*col)
-    else:
-        print('*'+'  '*(col-2)+' *')
+# # *****
+# # *   *
+# # *   *
+# # *   *
+# # *****
+# row=10
+# col=10
+# for i in range(1,row+1):
+#     if i in (1,row):
+#         print("* "*col)
+#     else:
+#         print('*'+'  '*(col-2)+' *')
 
 
-n=5
-for i in range(1,n+1):
-    for j in range(n,0)
+# n=5
+# for i in range(1,n+1):
+#     for j in range(n,0)
 
 
 
