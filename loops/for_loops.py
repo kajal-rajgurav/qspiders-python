@@ -65,12 +65,12 @@
         
 # wapt to extract only string data from list of data.
 
-# data=[2,2.4,True,'apple',3+4j,'google',60,'microsoft']
-# st=[]
-# for i in data:
-#     if type(i)==str:
-#         st.append(i)
-# print(st)
+data=[2,2.4,True,'apple',3+4j,'google',60,'microsoft']
+st=[]
+for i in data:
+    if type(i)==str:
+        st.append(i)
+print(st)
 
 
 # wapt get to the only sum integer prensent in the tuple.
@@ -107,10 +107,10 @@
 # st='the only limit to our realiazation of tommorow will be our doubts of today'
 # for word in st.split():
 
-n=5
-for i in range(n+1):
-    for j in range(i):
-        print(i,j)
+# n=5
+# for i in range(n+1):
+#     for j in range(i):
+#         print(i,j)
      
 
 
@@ -127,20 +127,20 @@ for i in range(n+1):
 # 4,0,1,2,3,4
 
 
-for i in range(1, 5):
-    for j in range(i):
-        print(chr(65 + j), end=" ")
-    print()
+# for i in range(1, 5):
+#     for j in range(i):
+#         print(chr(65 + j), end=" ")
+#     print()
 
 
     
-* * * *
-* * *
-* *
-*
-for i in range(1, 5):
-    for j in range(i):
-        print("*", end=" ")
-    print()
+# * * * *
+# * * *
+# * *
+# *
+# for i in range(1, 5):
+#     for j in range(i):
+#         print("*", end=" ")
+#     print()
 
 
